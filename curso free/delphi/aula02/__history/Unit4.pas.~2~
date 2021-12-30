@@ -26,15 +26,7 @@ implementation
 
 procedure Tfrmteste.FormCreate(Sender: TObject);
 begin
-      // edit1.Text := DateToStr(Today)  ;
-      //apagado por motivo desconhecidas kkkkkkkkkk
-
-      {test
-      de comentarios
-      em chaves
-      }
-  // TODO:  mensagem do que tem para na segunda feira
-
+       edit1.Text := DateToStr(Today)  ;
 end;
 
 end.
