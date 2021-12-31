@@ -22,8 +22,8 @@ object Form4: TForm4
     Height = 21
     TabOrder = 0
     Text = 'Edit1'
-    OnDblClick = Edit1DblClick
-    OnEnter = Edit1Enter
+    OnChange = Edit1Change
+    OnClick = Edit1Change
   end
   object Memo1: TMemo
     Left = 352

@@ -13,6 +13,8 @@ type
     procedure Edit1Change(Sender: TObject);
     procedure Memo1Change(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Edit1DblClick(Sender: TObject);
+    procedure Edit1Enter(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,6 +34,16 @@ implementation
 procedure TForm4.Edit1Change(Sender: TObject);
 begin
    ShowMessage(TEdit(Sender).Text);
+end;
+
+procedure TForm4.Edit1DblClick(Sender: TObject);
+begin
+ ShowMessage(TEdit(Sender).Text);
+end;
+
+procedure TForm4.Edit1Enter(Sender: TObject);
+begin
+ ShowMessage('enter');
 end;
 
 procedure TForm4.FormCreate(Sender: TObject);

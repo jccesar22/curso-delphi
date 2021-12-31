@@ -1,7 +1,7 @@
 object Form4: TForm4
   Left = 0
   Top = 0
-  Caption = 'Sou o Caption do Formulario'
+  Caption = 'Form4'
   ClientHeight = 299
   ClientWidth = 635
   Color = clBtnFace
@@ -11,32 +11,39 @@ object Form4: TForm4
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  OnClick = Memo1Change
-  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Edit1: TEdit
-    Left = 64
+    Left = 32
     Top = 32
     Width = 121
     Height = 21
     TabOrder = 0
     Text = 'Edit1'
-    OnDblClick = Edit1DblClick
-    OnEnter = Edit1Enter
   end
-  object Memo1: TMemo
-    Left = 352
-    Top = 48
-    Width = 185
-    Height = 89
-    Lines.Strings = (
-      'linha 1'
-      'linha 2'
-      'linha 3'
-      '')
+  object Button1: TButton
+    Left = 400
+    Top = 32
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
     TabOrder = 1
-    OnChange = Memo1Change
-    OnClick = Memo1Change
+    OnClick = Button1Click
+  end
+  object Edit2: TEdit
+    Left = 32
+    Top = 80
+    Width = 121
+    Height = 21
+    TabOrder = 2
+    Text = 'Edit2'
+  end
+  object Edit3: TEdit
+    Left = 32
+    Top = 136
+    Width = 121
+    Height = 21
+    TabOrder = 3
+    Text = 'Edit3'
   end
 end
