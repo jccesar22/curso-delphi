@@ -36,6 +36,8 @@ begin
    sNome := 'Teste de String';
 
    Edit1.Text := sNome;
+   { fazendo teste de dbug
+   }
 
 end;
 
