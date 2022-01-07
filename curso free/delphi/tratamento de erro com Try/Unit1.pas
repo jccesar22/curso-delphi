@@ -3,7 +3,8 @@ unit Unit1;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
@@ -24,15 +25,17 @@ implementation
 {$R *.dfm}
 
 procedure TForm1.Button1Click(Sender: TObject);
-var numero, zero:Integer;
+var
+  numero, Zero: Integer;
 begin
 
-     try
-
-     Except
-         on E: Exeception do
-           showMessage(E.ClassName + 'Erro de divisão: ' + E.Message)
-     end;
+  try
+     Zero := 0;
+     numero := 1 div Zero;
+  Except
+    on E: Exception do    //fazendo estourar um exessão
+      ShowMessage(E.ClassName + ' Erro de divisão: ' + E.Message)
+  end;
 end;
 
 end.
