@@ -1,0 +1,51 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F2B23925-EC79-405F-8508-3779AC1BDEFB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Project1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\..\..\..\AppData\Local\Temp\Rar$DIa10476.35299\Vetor_e_Matriz.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\..\..\..\Desktop\Vetor_e_Matriz\Vetor_e_Matriz.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Project1">
+        <MSBuild Projects="Project1.dproj"/>
+    </Target>
+    <Target Name="Project1:Clean">
+        <MSBuild Projects="Project1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project1:Make">
+        <MSBuild Projects="Project1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Vetor_e_Matriz">
+        <MSBuild Projects="..\..\..\..\..\..\Desktop\Vetor_e_Matriz\Vetor_e_Matriz.dproj"/>
+    </Target>
+    <Target Name="Vetor_e_Matriz:Clean">
+        <MSBuild Projects="..\..\..\..\..\..\Desktop\Vetor_e_Matriz\Vetor_e_Matriz.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Vetor_e_Matriz:Make">
+        <MSBuild Projects="..\..\..\..\..\..\Desktop\Vetor_e_Matriz\Vetor_e_Matriz.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Project1;Vetor_e_Matriz;Vetor_e_Matriz"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Project1:Clean;Vetor_e_Matriz:Clean;Vetor_e_Matriz:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Project1:Make;Vetor_e_Matriz:Make;Vetor_e_Matriz:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

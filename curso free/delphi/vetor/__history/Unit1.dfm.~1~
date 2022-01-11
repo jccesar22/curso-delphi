@@ -27,7 +27,6 @@ object Form1: TForm1
     Height = 57
     Caption = 'selecionar o tipo de Array'
     Columns = 2
-    ItemIndex = 0
     Items.Strings = (
       'Unidimensional (Vetor)'
       'BIdimencional  (Vetor)')
@@ -44,9 +43,9 @@ object Form1: TForm1
   end
   object mmoResultado: TMemo
     Left = 24
-    Top = 192
+    Top = 144
     Width = 905
-    Height = 313
+    Height = 361
     Lines.Strings = (
       'mmoResultado')
     TabOrder = 2
