@@ -13,13 +13,6 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Tamanho: TLabel
-    Left = 24
-    Top = 80
-    Width = 76
-    Height = 13
-    Caption = 'Tamanho_vetor'
-  end
   object rdgTipoDeArray: TRadioGroup
     Left = 24
     Top = 8
@@ -47,17 +40,34 @@ object Form1: TForm1
     Top = 192
     Width = 905
     Height = 313
-    Lines.Strings = (
-      'mmoResultado')
+    Lines.Strings = ()
     TabOrder = 2
   end
   object btnCriar: TButton
-    Left = 168
-    Top = 97
+    Left = 24
+    Top = 145
     Width = 105
     Height = 25
     Caption = 'Criar'
     TabOrder = 3
     OnClick = btnCriarClick
+  end
+  object btnLimpar: TButton
+    Left = 208
+    Top = 145
+    Width = 75
+    Height = 25
+    Caption = 'Limpar'
+    TabOrder = 4
+    OnClick = btnLimparClick
+  end
+  object btnSair: TButton
+    Left = 368
+    Top = 145
+    Width = 75
+    Height = 25
+    Caption = 'Sair'
+    TabOrder = 5
+    OnClick = btnSairClick
   end
 end
